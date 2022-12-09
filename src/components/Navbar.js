@@ -4,7 +4,7 @@ import './styles/Navbar.css';
 import { RxAvatar } from 'react-icons/rx';
 
 const Navbar = () => (
-  <>
+  <div className="page-wrapper">
     <header>
       <h1>Bookstore CMS</h1>
       <nav>
@@ -26,7 +26,7 @@ const Navbar = () => (
       </div>
     </header>
     <Outlet />
-  </>
+  </div>
 );
 
 export default Navbar;

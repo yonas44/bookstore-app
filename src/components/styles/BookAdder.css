@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-holder {
+  margin: 0 auto 120px auto;
+  padding: 0 7.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#add-book {
+  color: grey;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+form input {
+  border: 1px solid lightgrey;
+  height: 45px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+#input-title {
+  width: 45%;
+}
+
+#input-author {
+  width: 30%;
+}
+
+input[type='submit'] {
+  flex: 1;
+  font-weight: 700;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(19, 129, 255);
+}
