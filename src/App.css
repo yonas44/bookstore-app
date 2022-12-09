@@ -1,0 +1,16 @@
+.App-bg {
+  background-color: rgb(231, 230, 230);
+  padding: 5%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.App {
+  background-color: rgb(238, 238, 238);
+  width: 90vw;
+  box-shadow: 0 10px 30px rgb(160, 160, 160);
+}
+
+button {
+  border-radius: 3px;
+}
