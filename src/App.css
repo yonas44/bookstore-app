@@ -8,8 +8,7 @@
 .App {
   background-color: rgb(238, 238, 238);
   width: 90vw;
-  height: fit-content;
-  box-shadow: 0px 10px 30px rgb(160, 160, 160);
+  box-shadow: 0 10px 30px rgb(160, 160, 160);
 }
 
 button {
