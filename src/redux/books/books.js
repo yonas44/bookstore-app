@@ -22,7 +22,7 @@ export function removeBook(detail) {
 export default function bookReducer(state = [], action = {}) {
   switch (action.type) {
     case ADD_BOOK:
-      return [...state, action.detail];
+      return [...state, action.payload.detail];
     case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.detail.id);
     default:
