@@ -16,15 +16,18 @@
 
 h4 {
   color: grey;
+  text-transform: capitalize;
 }
 
 h2 {
+  text-transform: capitalize;
   margin-top: 8px;
   letter-spacing: 0.05rem;
 }
 
 .left-section h3 {
-  color: rgb(19, 129, 255);
+  text-transform: capitalize;
+  color: rgb(17, 117, 231);
   font-weight: 100;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
@@ -71,4 +74,8 @@ h2 {
   color: white;
   background-color: rgb(19, 129, 255);
   padding: 8px 25px;
+}
+
+#update-btn:hover {
+  background-color: rgb(56, 149, 255);
 }

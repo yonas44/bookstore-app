@@ -40,8 +40,13 @@ form input {
 input[type='submit'] {
   flex: 1;
   font-weight: 700;
+  cursor: pointer;
   color: white;
   border-radius: 3px;
   border: none;
   background-color: rgb(19, 129, 255);
+}
+
+input[type='submit']:hover {
+  background-color: rgb(56, 149, 255);
 }

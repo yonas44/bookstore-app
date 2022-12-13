@@ -1,5 +1,7 @@
 const CHECK_STATUS = 'bookstore/categories/CHECK_STATUS';
 
+const initailState = 'Hi, this is Catagories page';
+
 export function changeCategories(category) {
   return {
     type: CHECK_STATUS,
@@ -9,7 +11,7 @@ export function changeCategories(category) {
   };
 }
 
-export default function categoriesReducer(state = [], action = {}) {
+export default function categoriesReducer(state = initailState, action = {}) {
   switch (action.type) {
     case CHECK_STATUS:
       return 'Under construction';
