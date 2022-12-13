@@ -83,14 +83,14 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-- Run `git clone https://github.com/yonas44/math_magicians.git`
+- Run `git clone https://github.com/yonas44/bookstore-app.git`
 
 ### Install
 
 Install this project with:
 
 ```sh
-  cd math_magicians
+  cd bookstore-app
   npm install
 ```
 
