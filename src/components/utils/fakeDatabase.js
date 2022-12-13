@@ -1,35 +1,28 @@
+import uuid from 'react-uuid';
+
 const booksDB = [
   {
-    id: 1,
-    firstSection: {
+    id: uuid(),
+    detail: {
       author: 'Yonas',
       title: 'Twilight',
       genre: 'Action',
     },
-    secondSection: {
-      progress: 65,
-    },
   },
   {
-    id: 2,
-    firstSection: {
+    id: uuid(),
+    detail: {
       author: 'Selam',
       title: 'Breaking bad',
       genre: 'Crime',
     },
-    secondSection: {
-      progress: 25,
-    },
   },
   {
-    id: 3,
-    firstSection: {
+    id: uuid(),
+    detail: {
       author: 'Henok',
       title: 'Twilight',
       genre: 'Horror',
-    },
-    secondSection: {
-      progress: 50,
     },
   },
 ];

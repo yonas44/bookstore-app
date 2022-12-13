@@ -8,6 +8,8 @@
   margin: 50px auto 0 auto;
   width: 85%;
   display: flex;
+  max-height: 60vh;
+  overflow: auto;
   flex-direction: column;
   gap: 20px;
 }
@@ -17,7 +19,7 @@
   padding: 5px 15px;
   background: transparent;
   border: none;
-  color: rgb(19, 129, 255);
+  color: rgb(14, 85, 166);
 }
 
 .book-buttons {
