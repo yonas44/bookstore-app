@@ -34,7 +34,7 @@ This app is a bookstore app which is built with React.
 
 # 📖 Bookstore-app <a name="about-project"></a>
 
-**Bookstore** is a project which is created using React. For this project I am trying to build a bookstore app which will perform books based on catagories and allows an admin to add books and users to leave a comment and more.
+**Bookstore** is a project which is created using React. For this project I built a bookstore app which allows an admin to add books and users to leave a comment and more...more features to be added😃
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -62,7 +62,7 @@ This app is a bookstore app which is built with React.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://react-book-store.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

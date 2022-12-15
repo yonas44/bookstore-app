@@ -12,9 +12,12 @@ const BookAdder = () => {
     category: 'Fiction',
   };
 
+  const initialMessage = 'Please fill all the inputs!';
+
   const dispatch = useDispatch();
   const [detail, setDetail] = useState(initailValue);
   const [error, setError] = useState(false);
+  const [message, setMessage] = useState(initialMessage);
 
   const handleChange = (input) => {
     const target = input.target.id;
@@ -34,10 +37,14 @@ const BookAdder = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (detail.title.trim() && detail.author.trim()) {
-      dispatch(addBookAsync(detail));
-      setDetail(initailValue);
-      setError(false);
-      return;
+      if (detail.title.length < 40 && detail.author.length < 40) {
+        dispatch(addBookAsync(detail));
+        setDetail(initailValue);
+        setMessage(initialMessage);
+        setError(false);
+        return;
+      }
+      setMessage('Please, use only 40 characters!');
     }
     setError(true);
   };
@@ -62,9 +69,7 @@ const BookAdder = () => {
         />
         <input type="submit" value="ADD BOOK" />
       </form>
-      <div className={`error ${error ? 'slide' : ''}`}>
-        Please fill all the inputs!
-      </div>
+      <div className={`error ${error ? 'slide' : ''}`}>{message}</div>
     </div>
   );
 };

@@ -21,8 +21,23 @@ header {
 }
 
 h1 {
+  margin-left: 40px;
   font-size: 36px;
   color: rgb(19, 129, 255);
+}
+
+#burger-menu {
+  background: transparent;
+  border: none;
+  height: 50px;
+  z-index: 8;
+  position: fixed;
+  cursor: pointer;
+  padding: 0 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  transition: all 0.5s;
 }
 
 nav {
@@ -30,8 +45,32 @@ nav {
 }
 
 ul {
+  padding: 50% 50%;
+  z-index: 6;
+  top: -100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(black, rgba(255, 255, 255, 0));
+  backdrop-filter: blur(5px);
+  position: fixed;
+  display: none;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.open {
   display: flex;
-  justify-content: space-around;
+  animation: fade 0.5s forwards ease-out;
+}
+
+@keyframes fade {
+  100% {
+    top: 0;
+  }
 }
 
 li {
@@ -41,11 +80,36 @@ li {
 }
 
 .link {
-  color: black;
+  color: white;
   font-size: 13px;
   text-decoration: none;
 }
 
+.link:hover {
+  color: rgb(19, 129, 255);
+}
+
 #profile {
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  #burger-menu {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: transparent;
+    backdrop-filter: none;
+    width: inherit;
+    height: inherit;
+    padding: 0 50px;
+  }
+
+  .link {
+    color: black;
+  }
 }

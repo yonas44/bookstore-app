@@ -2,6 +2,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import Button from './book-btn';
 import './styles/Book.css';
+import ProgressBar from './ProgressBar';
 
 const Book = (props) => {
   const {
@@ -37,14 +38,13 @@ const Book = (props) => {
         </div>
       </section>
       <section className="middle-section">
-        <div id="progress-bar-info">
-          <p id="percentage">0%</p>
-          <p id="completed">Completed</p>
-        </div>
+        <ProgressBar />
       </section>
       <section className="right-section">
-        <p id="chap-title">CURRENT CHAPTER</p>
-        <p id="chap-number">Chapter 1</p>
+        <div className="chapter-info">
+          <p id="chap-title">CURRENT CHAPTER</p>
+          <p id="chap-number">Chapter 1</p>
+        </div>
         <button type="button" id="update-btn">
           UPDATE PROGRESS
         </button>
