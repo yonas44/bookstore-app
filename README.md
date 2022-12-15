@@ -53,7 +53,8 @@ This app is a bookstore app which is built with React.
 ### Key Features <a name="key-features"></a>
 
 - **Take user input**
-- **Perform mathimatical operations**
+- **Adds books using API**
+- **Removes books using API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

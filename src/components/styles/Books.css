@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.books-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .books-holder {
   margin: 50px auto 0 auto;
   width: 85%;
@@ -37,4 +43,28 @@
   height: 1.5px;
   border: none;
   background-color: lightgrey;
+}
+
+.progress {
+  display: none;
+  margin: auto auto;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.roll {
+  display: flex;
+}
+
+#loading {
+  width: 100px;
 }

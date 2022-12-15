@@ -1,16 +1,20 @@
+import uuid from 'react-uuid';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { addBookAsync } from '../redux/books/books';
 import './styles/BookAdder.css';
-import { addBook } from '../redux/books/books';
 
 const BookAdder = () => {
   const initailValue = {
+    item_id: uuid(),
     author: '',
     title: '',
+    category: 'Fiction',
   };
 
   const dispatch = useDispatch();
   const [detail, setDetail] = useState(initailValue);
+  const [error, setError] = useState(false);
 
   const handleChange = (input) => {
     const target = input.target.id;
@@ -29,8 +33,13 @@ const BookAdder = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    dispatch(addBook(detail));
-    setDetail(initailValue);
+    if (detail.title.trim() && detail.author.trim()) {
+      dispatch(addBookAsync(detail));
+      setDetail(initailValue);
+      setError(false);
+      return;
+    }
+    setError(true);
   };
 
   return (
@@ -43,18 +52,19 @@ const BookAdder = () => {
           value={detail.title}
           placeholder="Book title"
           onChange={handleChange}
-          required
         />
         <input
           id="input-author"
           type="text"
           placeholder="Author"
           onChange={handleChange}
-          required
           value={detail.author}
         />
         <input type="submit" value="ADD BOOK" />
       </form>
+      <div className={`error ${error ? 'slide' : ''}`}>
+        Please fill all the inputs!
+      </div>
     </div>
   );
 };
