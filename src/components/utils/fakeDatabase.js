@@ -2,24 +2,24 @@ import uuid from 'react-uuid';
 
 const booksDB = [
   {
-    id: uuid(),
     detail: {
+      item_id: uuid(),
       author: 'Yonas',
       title: 'Twilight',
       genre: 'Action',
     },
   },
   {
-    id: uuid(),
     detail: {
+      item_id: uuid(),
       author: 'Selam',
       title: 'Breaking bad',
       genre: 'Crime',
     },
   },
   {
-    id: uuid(),
     detail: {
+      item_id: uuid(),
       author: 'Henok',
       title: 'Twilight',
       genre: 'Horror',

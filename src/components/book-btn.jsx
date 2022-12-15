@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook } from '../redux/books/books';
+import { removeBookAsync } from '../redux/books/books';
 
 const Button = (props) => {
   const { id, name } = props;
@@ -16,7 +16,7 @@ const Button = (props) => {
   };
 
   const handleDelete = () => {
-    dispatch(removeBook(id));
+    dispatch(removeBookAsync(id));
   };
 
   return (

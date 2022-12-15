@@ -5,7 +5,7 @@ import './styles/Book.css';
 
 const Book = (props) => {
   const {
-    id,
+    itemId,
     title,
     author,
     genre = null,
@@ -32,7 +32,7 @@ const Book = (props) => {
         <h3>{author}</h3>
         <div className="book-buttons">
           {buttons.map((button) => (
-            <Button key={button.id} name={button.name} id={id} />
+            <Button key={button.id} name={button.name} id={itemId} />
           ))}
         </div>
       </section>
@@ -54,14 +54,14 @@ const Book = (props) => {
 };
 
 Book.defaultProps = {
-  id: null,
+  itemId: null,
   title: null,
   author: null,
   genre: null,
 };
 
 Book.propTypes = {
-  id: PropTypes.string,
+  itemId: PropTypes.string,
   author: PropTypes.string,
   title: PropTypes.string,
   genre: PropTypes.string,
