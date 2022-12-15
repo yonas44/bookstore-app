@@ -1,0 +1,35 @@
+.progress-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.svg-indicator {
+  width: 100px;
+  height: 100px;
+}
+
+.svg-indicator-track,
+.svg-indicator-indication {
+  fill: transparent;
+  stroke-width: 10px;
+}
+
+.svg-indicator-track {
+  stroke: #ddd;
+}
+
+.svg-indicator-indication {
+  stroke: #07c;
+  stroke-dasharray: 256;
+  animation: revolve 1s forwards ease-out;
+}
+
+@keyframes revolve {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: var(input);
+  }
+}

@@ -5,7 +5,7 @@
 }
 
 .form-holder {
-  margin: 0 auto 120px auto;
+  margin: 0 auto;
   padding: 0 7.5%;
   display: flex;
   flex-direction: column;
@@ -19,6 +19,7 @@
 form {
   width: 100%;
   display: flex;
+  flex-direction: column;
   gap: 30px;
   z-index: 2;
 }
@@ -30,14 +31,6 @@ form input {
   font-size: 16px;
 }
 
-#input-title {
-  width: 45%;
-}
-
-#input-author {
-  width: 30%;
-}
-
 input[type='submit'] {
   flex: 1;
   font-weight: 700;
@@ -45,6 +38,8 @@ input[type='submit'] {
   color: white;
   border-radius: 3px;
   border: none;
+  padding: 20px;
+  width: fit-content;
   background-color: rgb(19, 129, 255);
 }
 
@@ -67,7 +62,21 @@ input[type='submit']:hover {
 }
 
 .slide {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.733);
   transform: translateY(0);
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    flex-direction: row;
+  }
+
+  #input-title {
+    width: 45%;
+  }
+
+  #input-author {
+    width: 30%;
+  }
 }

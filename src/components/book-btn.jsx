@@ -8,12 +8,9 @@ const Button = (props) => {
 
   const dispatch = useDispatch();
 
-  const handleComments = () => {
-    console.log('hi comments');
-  };
-  const handleEdit = () => {
-    console.log('hi edits');
-  };
+  const handleComments = () => 'Hi, comments here';
+
+  const handleEdit = () => 'Hi, Edit here';
 
   const handleDelete = () => {
     dispatch(removeBookAsync(id));
