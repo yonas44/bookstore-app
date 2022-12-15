@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/bookstore-app/static/css/main.e39db6ad.css",
+    "main.js": "/bookstore-app/static/js/main.ad2512dc.js",
+    "static/js/787.f0e5dbd9.chunk.js": "/bookstore-app/static/js/787.f0e5dbd9.chunk.js",
+    "static/media/load.gif": "/bookstore-app/static/media/load.90672f1deffccbcdf4f1.gif",
+    "index.html": "/bookstore-app/index.html",
+    "main.e39db6ad.css.map": "/bookstore-app/static/css/main.e39db6ad.css.map",
+    "main.ad2512dc.js.map": "/bookstore-app/static/js/main.ad2512dc.js.map",
+    "787.f0e5dbd9.chunk.js.map": "/bookstore-app/static/js/787.f0e5dbd9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e39db6ad.css",
+    "static/js/main.ad2512dc.js"
+  ]
+}
